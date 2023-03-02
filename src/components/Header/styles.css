@@ -21,6 +21,9 @@ header {
   margin: 0;
 } header nav h2 {
   margin: 0 10px;
+} .logo-nav {
+  text-decoration: none;
+  color: black;
 }
 
 
