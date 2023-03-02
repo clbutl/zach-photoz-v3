@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush');
+header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 110px;
+  height: 110px;
+  align-items: center;
+  padding: 25px 50px;
+  font-family: caveat brush;
+  background-color: rgb(253, 234, 255);
+} header nav {
+  display: flex;
+  font-size: 16px;
+} .nav-links {
+  text-decoration: none;
+  color: black;
+} .logo-name-div {
+  margin-left: 10px;
+} .logo-name-div h1 {
+  font-size: 45px;
+  margin: 0;
+} header nav h2 {
+  margin: 0 10px;
+}
+
+
+.logo-name-div:hover {
+  cursor: pointer;
+}
+
+header nav h2:hover {
+  cursor: pointer;
+}
