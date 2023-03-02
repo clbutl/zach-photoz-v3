@@ -1,4 +1,7 @@
+/* Imports Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush');
+
+/* Allows Any Element to Become Hidden */
 .hidden {
   height: 0; 
   width: 0; 
@@ -6,6 +9,7 @@
   opacity: 0;
 }
 
+/* Header Base Values */
 header {
   justify-content: space-between;
   display: flex;
@@ -19,7 +23,6 @@ header {
   display: flex;
   font-size: 16px;
   width: 70%;
-  margin-right: -125px;
   justify-content: right;
 } .nav-links {
   text-decoration: none;
@@ -36,33 +39,32 @@ header {
   color: black;
 } 
 
-
+/* Cursor Pointer for Header Items */
 .logo-name-div:hover {
   cursor: pointer;
-}
-
-header nav h2:hover {
+} header nav h2:hover {
   cursor: pointer;
 }
 
-/* Active/Inactive Navigation Links */
+/* Active/Inactive Navigation Links/Category Transition */
 .active {
   opacity: 1;
 } .inactive {
   opacity: .8;
   transition-duration: 300ms;
-} .inactive:hover {
+} .inactive:hover, .inactive-categories:hover {
   opacity: 1;
-  transition-duration: 300ms;
+  transition: opacity 300ms ease;
 } .inactive-categories {
   opacity: .8;
-  transition: translate 1000ms ease;
-  transition-duration: 300ms;
+  translate: 0;
+  transition: translate 1500ms ease;
+  transition: opacity 300ms ease;
 } .active-categories {
   opacity: 1;
   position: relative;
   transition-duration: 1500ms;
-  translate: -40vw;
+  translate: -31vw;
   color: black;
 } .not-hidden {
   transition-delay: 600ms;
@@ -70,43 +72,87 @@ header nav h2:hover {
 } 
 
 
-
+/* Category Visability and Transition */
 .hidden-drop {
   height: 0; 
   width: 0; 
   overflow: hidden;
-  opacity: 0;
   translate: 43vw;
 } .active-drop {
   opacity: .8;
   position: relative;
-  translate: -40vw;
+  translate: -31vw;
   transition: translate 1500ms ease;
 } .active-drop:hover {
   opacity: 1;
+} .dropdown-div {
+  height: 0; 
+  width: 0; 
+  overflow: hidden;
+  display: flex;
+} .active-dropdown-div {
+  display: flex;
+}
+
+
+
+/* Mobile Dropdown */
+.mobile-dropdown {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 65px;
+  margin-top: 10px;
+  padding: 0 10px;
   transition-duration: 300ms;
-}
+} .mobile-dropdown div {
+  display: none;
+  border: 1px solid black;
+  width: 60px;
+  height: 8px;
+  background-color: black;
+  border-radius: 10px;
+  transition-duration: 300ms;
+} #nav-dropdown-1 {
+  transform: rotate(0.125turn) translate(17px, 17px);
+  transition-duration: 300ms;
+  margin-top: -12px;
+} #nav-dropdown-2 {
+  display: none;
+  transition-duration: 300ms;
+} #nav-dropdown-3 {
+  transform: rotate(-0.125turn) translate(5px, -5px);
+  transition-duration: 300ms;
+  margin-top: -12px;
+} 
 
-@media screen and (max-width: 1500px) {
+
+/* Different Screen Views for Navigation Menu */
+@media screen and (max-width: 1600px) {
   .active-drop {
-    translate: -35vw;
+    translate: -29vw;
   } .active-categories {
-    translate: -35vw;
+    translate: -29vw;
   }
-}
-
-@media screen and (max-width: 1350px) {
+} @media screen and (max-width: 1475px) {
   .active-drop {
-    translate: -30vw;
+    translate: -24vw;
   } .active-categories {
-    translate: -30vw;
+    translate: -24vw;
   }
-}
-
-@media screen and (max-width: 1225px) {
+} @media screen and (max-width: 1350px) {
   .active-drop {
-    translate: -25vw;
+    translate: -21vw;
   } .active-categories {
-    translate: -25vw;
+    translate: -21vw;
+  }
+} @media screen and (max-width: 1225px) {
+  .active-drop {
+    translate: -17vw;
+  } .active-categories {
+    translate: -17vw;
   }
 }

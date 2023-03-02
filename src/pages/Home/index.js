@@ -1,6 +1,7 @@
 import React from "react";
 import './styles.css';
 
+// Filler Image For Elements
 import FillerHome from '../../assets/filler-home.png'
 
 const Home = () => {

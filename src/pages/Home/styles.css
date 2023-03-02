@@ -1,5 +1,7 @@
+/* Imports Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush');
 
+/* Main Overall Values */
 .main-home-div {
   background-color: rgb(253, 234, 255);
 } .main-home-div section {
@@ -30,7 +32,7 @@
   cursor: pointer;
 }
 
-
+/* Left or Right Articles in Each Sections */
 .left-a {
   margin-right: 25px;
 } .right-a {
@@ -38,7 +40,7 @@
 }
 
 
-
+/* Changes From Desktop View to Mobile View */
 @media screen and (max-width: 1150px) {
   .main-home-div section {
     flex-direction: column;
