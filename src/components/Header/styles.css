@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush');
+.hidden {
+  height: 0; 
+  width: 0; 
+  overflow: hidden;
+  opacity: 0;
+}
+
 header {
-  display: flex;
   justify-content: space-between;
+  display: flex;
   min-height: 110px;
   height: 110px;
   align-items: center;
@@ -11,6 +18,9 @@ header {
 } header nav {
   display: flex;
   font-size: 16px;
+  width: 70%;
+  margin-right: -125px;
+  justify-content: right;
 } .nav-links {
   text-decoration: none;
   color: black;
@@ -24,7 +34,7 @@ header {
 } .logo-nav {
   text-decoration: none;
   color: black;
-}
+} 
 
 
 .logo-name-div:hover {
@@ -44,4 +54,59 @@ header nav h2:hover {
 } .inactive:hover {
   opacity: 1;
   transition-duration: 300ms;
+} .inactive-categories {
+  opacity: .8;
+  transition: translate 1000ms ease;
+  transition-duration: 300ms;
+} .active-categories {
+  opacity: 1;
+  position: relative;
+  transition-duration: 1500ms;
+  translate: -40vw;
+  color: black;
+} .not-hidden {
+  transition-delay: 600ms;
+  transition-duration: 100ms;
+} 
+
+
+
+.hidden-drop {
+  height: 0; 
+  width: 0; 
+  overflow: hidden;
+  opacity: 0;
+  translate: 43vw;
+} .active-drop {
+  opacity: .8;
+  position: relative;
+  translate: -40vw;
+  transition: translate 1500ms ease;
+} .active-drop:hover {
+  opacity: 1;
+  transition-duration: 300ms;
+}
+
+@media screen and (max-width: 1500px) {
+  .active-drop {
+    translate: -35vw;
+  } .active-categories {
+    translate: -35vw;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .active-drop {
+    translate: -30vw;
+  } .active-categories {
+    translate: -30vw;
+  }
+}
+
+@media screen and (max-width: 1225px) {
+  .active-drop {
+    translate: -25vw;
+  } .active-categories {
+    translate: -25vw;
+  }
 }
