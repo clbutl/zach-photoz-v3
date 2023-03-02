@@ -36,3 +36,17 @@
 } .right-a {
   margin-left: 25px;
 }
+
+
+
+@media screen and (max-width: 1150px) {
+  .main-home-div section {
+    flex-direction: column;
+    display: flex;
+  } .main-home-div section article {
+    width: 100%;
+    margin-left: 0;
+  } .right-a {
+    margin-top: 60px;
+  }
+}

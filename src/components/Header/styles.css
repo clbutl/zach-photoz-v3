@@ -31,3 +31,14 @@ header {
 header nav h2:hover {
   cursor: pointer;
 }
+
+/* Active/Inactive Navigation Links */
+.active {
+  opacity: 1;
+} .inactive {
+  opacity: .8;
+  transition-duration: 300ms;
+} .inactive:hover {
+  opacity: 1;
+  transition-duration: 300ms;
+}
