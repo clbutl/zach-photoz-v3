@@ -1,0 +1,74 @@
+/* Imports Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush');
+
+/* Main Form Content */
+.main-contact-div {
+  display: flex;
+  justify-content: center;
+  font-family: caveat brush;
+  background-color: rgb(253, 234, 255);
+  min-height: 100vh;
+} .form-div {
+  display: flex;
+  flex-direction: column;
+} .form-div h3 {
+  margin: 0;
+  font-size: 25px;
+} form h1 {
+  font-size: 45px;
+  text-align: center;
+} .first-last-div {
+  display: flex;
+  flex-direction: row;
+} .input-div {
+  margin: 0 15px 15px 15px;
+} form input {
+  font-size: 30px;
+  font-family: caveat brush;
+  font-weight: 800;
+  padding: 5px;
+} .form-header {
+  margin: 0px 0 30px;
+}
+
+
+/* Submit Button */
+.submit-div {
+  display: flex;
+  justify-content: center;
+} .submit-div button {
+  font-family: caveat brush;
+  font-size: 40px;
+  text-align: center;
+  background-color: rgb(225, 150, 255);
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition-duration: 300ms;
+} .submit-div button:hover {
+  cursor: pointer;
+  background-color: rgb(212, 102, 255);
+  transition-duration: 300ms;
+}
+
+/* Contact Bottom */
+.contact-links h1 {
+  margin: 10px 0;
+  text-align: center;
+} .contact-bottom-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+} .contact-links {
+  text-decoration: none;
+  width: fit-content;
+  color: black;
+}
+
+
+
+.red-text {
+  color: red;
+}
