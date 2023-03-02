@@ -1,0 +1,32 @@
+/* Imports Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush');
+
+
+.main-about-div {
+  display: flex;
+  justify-content: space-around;
+  font-family: Caveat Brush;
+  min-height: 100vh;
+} .about-left-div {
+  width: 35%;
+} .about-right-div {
+  width: 50%;
+}
+
+
+.about-top-article {
+  border-bottom: 2px solid black;
+} .about-top-article h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 30px 0;
+} .main-about-div p {
+  font-size: 30px;
+  margin: 15px 0;
+} .about-top-article span {
+  margin: 0;
+} .about-header-span {
+  font-weight: 800;
+  width: fit-content;
+  border-bottom: 1px solid black;
+}

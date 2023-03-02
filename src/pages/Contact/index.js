@@ -8,7 +8,7 @@ const Contact = () => {
 
   return (
     <motion.div 
-      className="fade-out main-contact-div"
+      className="main-contact-div"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       // exit={{ opacity: 0 }}  
