@@ -15,7 +15,7 @@
   align-items: center;
   overflow: hidden;
   justify-content: center;
-} .main-home-div section article img {
+} .article-img {
   width: 100%;
   transition-duration: 400ms;
 } .main-home-div section article figcaption {
@@ -26,9 +26,9 @@
   background-color: white;
   padding: 15px;
   border-radius: 5px;
-} .main-home-div section article img:hover {
+} .article-img:hover {
   transition-duration: 400ms;
-  opacity: .85;
+  opacity: 1;
   cursor: pointer;
 }
 

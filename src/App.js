@@ -1,31 +1,16 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import './App.css';
+import AnimatedRoutes from './components/AnimatedRoutes';
 import Header from './components/Header';
-import Contact from './pages/Contact';
-import Home from './pages/Home';
 
 function App() {
   return (
-    <div>
+    <div className='app-div'>
       <Router>
         {/* Header Element Always Being on Page No Matter Route */}
         <Header/>
         <div>
-          <Routes>
-
-            {/* Main Home Route */}
-            <Route
-              element={<Home/>}
-              path='/'
-            />
-
-            {/* Contact Route */}
-            <Route
-              element={<Contact/>}
-              path='/contact'
-            />
-
-          </Routes>
+          <AnimatedRoutes/>
         </div>
       </Router>
     </div>

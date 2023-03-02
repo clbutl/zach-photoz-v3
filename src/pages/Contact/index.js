@@ -1,12 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './styles.css'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
-
+  
 
   return (
-    <div className="main-contact-div">
+    <motion.div 
+      className="fade-out main-contact-div"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      // exit={{ opacity: 0 }}  
+    >
       {/* Contact ME Form */}
       <form>
         <h1 className="form-header">Contact</h1>
@@ -36,6 +42,7 @@ const Contact = () => {
             id="email-from"
             name="email"
             required={true}
+            type='email'
           />
           <h3>Email<span className="red-text">*</span></h3>
         </div>
@@ -50,16 +57,26 @@ const Contact = () => {
         </div>
         {/* Message */}
         <div className="form-div input-div">
-          <input
+          <textarea
             id="message-from"
             name="message"
             required={true}
-          />
+            type='text'
+          >
+            </textarea>
           <h3>Message<span className="red-text">*</span></h3>
         </div>
         <div className="submit-div">
-          <button type="submit">Submit</button>
+          <motion.button
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: .9 }} 
+            type="submit"
+          >
+              Submit
+          </motion.button>
         </div>
+
+
         <div className="contact-bottom-links">
           <Link className="contact-links" target='_blank' onClick={() => {
             window.location = 'mailto:cannonlbutler@gmail.com';
@@ -73,7 +90,7 @@ const Contact = () => {
           </Link>
         </div>
       </form>
-    </div>
+    </motion.div>
   )
 }
 

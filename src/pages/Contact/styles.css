@@ -1,6 +1,11 @@
 /* Imports Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush');
 
+.fade-out {
+  opacity: 1;
+  transition: opacity 1500ms ease;
+}
+
 /* Main Form Content */
 .main-contact-div {
   display: flex;
@@ -22,13 +27,17 @@
   flex-direction: row;
 } .input-div {
   margin: 0 15px 15px 15px;
-} form input {
+} form input, form textarea {
   font-size: 30px;
   font-family: caveat brush;
   font-weight: 800;
   padding: 5px;
 } .form-header {
   margin: 0px 0 30px;
+} #message-from {
+  resize: none;
+  height: 120px;
+  flex-wrap: wrap;
 }
 
 
@@ -71,4 +80,31 @@
 
 .red-text {
   color: red;
+}
+
+
+@media screen and (max-width: 750px) {
+  .first-last-div {
+    flex-direction: column;
+  } .first-last-div input {
+    width: 80vw;
+  } .input-div input {
+    width: 80vw;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .contact-bottom-links h1 {
+    font-size: 35px;
+  } .form-div h3 {
+    margin: 0;
+    font-size: 20px;
+  } .first-last-div input {
+    font-size: 25px;
+  } .input-div input {
+    font-size: 25px;
+  } .submit-div button {
+    font-size: 30px;
+  }
 }
