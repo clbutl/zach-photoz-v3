@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import './styles.css';
 
 const Header = () => {
+  document.title = 'Zach Photoz'
   const [currentHash, changeHash] = useState(document.location.hash)
   const [activeCategories, changeActiveCategories] = useState(false)
   const [currentNav, changeNav] = useState(true)
