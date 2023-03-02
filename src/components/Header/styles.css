@@ -19,14 +19,6 @@ header {
   padding: 25px 50px;
   font-family: caveat brush;
   background-color: rgb(253, 234, 255);
-} header nav {
-  display: flex;
-  font-size: 16px;
-  width: 70%;
-  justify-content: right;
-} .nav-links {
-  text-decoration: none;
-  color: black;
 } .logo-name-div {
   margin-left: 10px;
 } .logo-name-div h1 {
@@ -42,117 +34,75 @@ header {
 /* Cursor Pointer for Header Items */
 .logo-name-div:hover {
   cursor: pointer;
-} header nav h2:hover {
-  cursor: pointer;
-}
-
-/* Active/Inactive Navigation Links/Category Transition */
-.active {
-  opacity: 1;
-} .inactive {
-  opacity: .8;
-  transition-duration: 300ms;
-} .inactive:hover, .inactive-categories:hover {
-  opacity: 1;
-  transition: opacity 300ms ease;
-} .inactive-categories {
-  opacity: .8;
-  translate: 0;
-  transition: translate 1500ms ease;
-  transition: opacity 300ms ease;
-} .active-categories {
-  opacity: 1;
-  position: relative;
-  transition-duration: 1500ms;
-  translate: -31vw;
-  color: black;
-} .not-hidden {
-  transition-delay: 600ms;
-  transition-duration: 100ms;
 } 
 
-
-/* Category Visability and Transition */
-.hidden-drop {
-  height: 0; 
-  width: 0; 
-  overflow: hidden;
-  translate: 43vw;
-} .active-drop {
-  opacity: .8;
-  position: relative;
-  translate: -31vw;
-  transition: translate 1500ms ease;
-} .active-drop:hover {
-  opacity: 1;
-} .dropdown-div {
-  height: 0; 
-  width: 0; 
-  overflow: hidden;
-  display: flex;
-} .active-dropdown-div {
-  display: flex;
-}
-
-
-
 /* Mobile Dropdown */
-.mobile-dropdown {
+.navigation-dropdown {
   position: absolute;
-  top: 0;
-  right: 20px;
-  display: flex;
+  display: none;
   justify-content: space-around;
   flex-direction: column;
-  min-height: 65px;
+  height: 40px;
   margin-top: 10px;
-  padding: 0 10px;
+  padding: 0;
+  margin: 0;
   transition-duration: 300ms;
-} .mobile-dropdown div {
-  display: none;
+  top: 55px;
+  right: 55px;
+} .navigation-dropdown div {
   border: 1px solid black;
-  width: 60px;
-  height: 8px;
+  width: 30px;
+  height: 3px;
   background-color: black;
   border-radius: 10px;
   transition-duration: 300ms;
 } #nav-dropdown-1 {
-  transform: rotate(0.125turn) translate(17px, 17px);
+  transform: rotate(0.125turn) translate(12px, 12px);
   transition-duration: 300ms;
   margin-top: -12px;
 } #nav-dropdown-2 {
   display: none;
   transition-duration: 300ms;
 } #nav-dropdown-3 {
-  transform: rotate(-0.125turn) translate(5px, -5px);
+  transform: rotate(-0.125turn) translate(2px, -2px);
   transition-duration: 300ms;
   margin-top: -12px;
 } 
 
 
-/* Different Screen Views for Navigation Menu */
-@media screen and (max-width: 1600px) {
-  .active-drop {
-    translate: -29vw;
-  } .active-categories {
-    translate: -29vw;
+.mobile-menu {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 9;
+  display: none;
+  height: 0; 
+  width: 0; 
+}
+
+
+@media screen and (max-width: 1150px) {
+  .desktop-nav {
+    display: none;
+    height: 0; 
+    width: 0; 
+    overflow: hidden;
+  } header {
+    justify-content: left;
+  } .navigation-dropdown {
+    display: flex;
   }
-} @media screen and (max-width: 1475px) {
-  .active-drop {
-    translate: -24vw;
-  } .active-categories {
-    translate: -24vw;
-  }
-} @media screen and (max-width: 1350px) {
-  .active-drop {
-    translate: -21vw;
-  } .active-categories {
-    translate: -21vw;
-  }
-} @media screen and (max-width: 1225px) {
-  .active-drop {
-    translate: -17vw;
-  } .active-categories {
-    translate: -17vw;
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    padding: 10px 15px;
+  } .navigation-dropdown {
+    top: 45px;
+    right: 45px;
   }
 }

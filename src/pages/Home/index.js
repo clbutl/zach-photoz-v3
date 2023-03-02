@@ -61,7 +61,7 @@ const Home = () => {
       </section>
       {/* Cars & Nature */}
       <section>
-        <article className="left-a">
+        <article className="left-a" to='/cars'>
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="cars"/>
           <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>CARS</motion.figcaption>
         </article>

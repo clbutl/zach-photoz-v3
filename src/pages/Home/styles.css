@@ -52,3 +52,19 @@
     margin-top: 60px;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .main-home-div section {
+    padding: 0 20px 30px;
+  } .right-a {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-home-div section {
+    padding: 0 15px 15px;
+  } .right-a {
+    margin-top: 15px;
+  }
+}

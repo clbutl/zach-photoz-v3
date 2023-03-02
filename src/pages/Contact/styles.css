@@ -65,7 +65,6 @@
   margin: 10px 0;
   text-align: center;
 } .contact-bottom-links {
-  margin-top: 15px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -88,9 +87,9 @@
     flex-direction: column;
   } .first-last-div input {
     width: 80vw;
-  } .input-div input {
+  } .input-div input, .input-div textarea {
     width: 80vw;
-  }
+  } 
 }
 
 
@@ -106,5 +105,5 @@
     font-size: 25px;
   } .submit-div button {
     font-size: 30px;
-  }
+  } 
 }
