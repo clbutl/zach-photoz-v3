@@ -12,14 +12,22 @@ const Header = () => {
   const navigationChange = () => {
     changeNav(!currentNav)
   }
+
+  const switchPage = () => {
+    changeNav(true)
+  }
   
+  document.addEventListener('load', function() {
+    console.log('hi')
+  })
+
   return (
     <div>
       <header>
         {/* Top Left Logo */}
         <div className="logo-name-div">
-          <Link className="logo-nav" to='/'>
-            <h1 id="1" >
+          <Link className={currentNav ? "logo-nav" : "logo-nav active-mobile-logo"} to='/'>
+            <h1 onClick={switchPage} id="1" >
               ZACH PHOTOZ
             </h1>
           </Link>
@@ -37,13 +45,14 @@ const Header = () => {
           <div id={currentNav ? '' : 'nav-dropdown-3'}></div>
         </div>
 
-        <div className="mobile-menu">
-          <p>hji</p>
+        <div onClick={switchPage} className={currentNav ? 'inactive-mobile-nav' : 'active-mobile-nav'}>
+          <NavBar/>
         </div>
         
       </header>
     </div>
   )
 }
+
 
 export default Header;

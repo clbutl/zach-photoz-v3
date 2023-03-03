@@ -21,6 +21,7 @@ header {
   background-color: rgb(253, 234, 255);
 } .logo-name-div {
   margin-left: 10px;
+  z-index: 10;
 } .logo-name-div h1 {
   font-size: 45px;
   margin: 0;
@@ -38,7 +39,7 @@ header {
 
 /* Mobile Dropdown */
 .navigation-dropdown {
-  position: absolute;
+  position: fixed;
   display: none;
   justify-content: space-around;
   flex-direction: column;
@@ -49,6 +50,7 @@ header {
   transition-duration: 300ms;
   top: 55px;
   right: 55px;
+  z-index: 10;
 } .navigation-dropdown div {
   border: 1px solid black;
   width: 30px;
@@ -70,7 +72,7 @@ header {
 } 
 
 
-.mobile-menu {
+.active-mobile-nav, .inactive-mobile-nav {
   display: flex;
   position: absolute;
   width: 100%;
@@ -79,10 +81,12 @@ header {
   left: 0;
   background-color: white;
   z-index: 9;
-  display: none;
+  opacity: 0;
   height: 0; 
   width: 0; 
 }
+
+
 
 
 @media screen and (max-width: 1150px) {
@@ -95,6 +99,14 @@ header {
     justify-content: left;
   } .navigation-dropdown {
     display: flex;
+  } .active-mobile-nav {
+    height: 500vh; 
+    width: 100%; 
+    opacity: 1;
+    transition: width 100ms ease;
+  } .active-mobile-logo {
+    position: fixed;
+    top: 37px;
   }
 }
 
