@@ -8,7 +8,7 @@
   font-family: Caveat Brush;
   min-height: 100vh;
 } .about-left-div {
-  width: 35%;
+  width: fit-content;
 } .about-right-div {
   width: 50%;
 }
@@ -29,4 +29,42 @@
   font-weight: 800;
   width: fit-content;
   border-bottom: 1px solid black;
+}
+
+
+
+@media screen and (max-width: 1350px) {
+  .about-right-div {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .about-right-div {
+    width: 34%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-about-div {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0 20px;
+  } .about-left-div {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+  } .about-right-div {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .main-about-div {
+    padding: 0 15px;
+  } .about-left-div img {
+    width: 95vw;
+  }
 }

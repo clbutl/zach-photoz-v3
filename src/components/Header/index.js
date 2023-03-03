@@ -46,7 +46,9 @@ const Header = () => {
         </div>
 
         <div onClick={switchPage} className={currentNav ? 'inactive-mobile-nav' : 'active-mobile-nav'}>
-          <NavBar/>
+          <NavBar
+           clickAction = {switchPage}
+          />
         </div>
         
       </header>
