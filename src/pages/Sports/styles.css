@@ -1,0 +1,89 @@
+/* Imports Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush');
+
+/* Main Div */
+.main-sports-div {
+  display: flex;
+  flex-direction: column;
+  font-family: Caveat Brush;
+  justify-content: center;
+  align-items: center;
+}
+/* Description Divs */
+.sports-description-div {
+  display: flex;
+  position: absolute;
+  width: 450px;
+  flex-direction: column;
+  background-color: white;
+} .sports-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 90px 0;
+} .sports-description-div h1 {
+  font-size: 55px;
+  margin: 10px 0;
+  text-align: center;
+} .sports-description-div p {
+  font-size: 25px;
+  margin: 10px 0;
+  padding: 0 10px;
+  text-align: center;
+} 
+
+
+/* Track Sections */
+.track-section {
+  width: 95vw;
+} .track-description {
+  margin-top: -200px;
+  left: 10%;
+} 
+
+/* XC Sections */
+.xc-section {
+  width: 95vw;
+} .xc-description {
+  margin-top: -200px;
+  right: 10%;
+} 
+
+/* Football Sections */
+.football-section {
+  width: 95vw;
+} .football-description {
+  margin-top: -200px;
+  left: 10%;
+} 
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .sports-description-div {
+    position: relative;
+  } .sports-div {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px 20px 20px;
+  } 
+}
+
+@media screen and (max-width: 750px) {
+  .track-image, .xc-image, .football-image {
+    width: 90vw;
+  } .sports-description-div {
+    width: 65vw;
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  .sports-description-div h1 {
+    font-size: 40px;
+  } .sports-description-div p {
+    font-size: 19px;
+  } 
+}

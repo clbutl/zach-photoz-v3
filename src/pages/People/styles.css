@@ -1,0 +1,81 @@
+/* Imports Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush');
+
+/* Main Div */
+.main-people-div {
+  display: flex;
+  flex-direction: column;
+  font-family: Caveat Brush;
+  justify-content: center;
+  align-items: center;
+}
+/* Description Divs */
+.people-description-div {
+  display: flex;
+  position: absolute;
+  width: 450px;
+  flex-direction: column;
+  background-color: white;
+} .peoples-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 90px 0;
+} .people-description-div h1 {
+  font-size: 55px;
+  margin: 10px 0;
+  text-align: center;
+} .people-description-div p {
+  font-size: 25px;
+  margin: 10px 0;
+  padding: 0 10px;
+  text-align: center;
+} 
+
+
+/* Seniors Sections */
+.senior-section {
+  width: 95vw;
+} .seniors-description {
+  margin-top: -200px;
+  left: 10%;
+} 
+
+/* Couples Sections */
+.couples-section {
+  width: 95vw;
+} .couples-description {
+  margin-top: -200px;
+  right: 10%;
+} 
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .people-description-div {
+    position: relative;
+  } .peoples-div {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px 20px 20px;
+  } 
+}
+
+@media screen and (max-width: 750px) {
+  .couples-image, .seniors-image {
+    width: 90vw;
+  } .people-description-div {
+    width: 65vw;
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  .people-description-div h1 {
+    font-size: 40px;
+  } .people-description-div p {
+    font-size: 19px;
+  } 
+}

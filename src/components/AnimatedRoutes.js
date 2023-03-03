@@ -5,6 +5,8 @@ import { AnimatePresence } from 'framer-motion'
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
+import People from "../pages/People";
+import Sports from "../pages/Sports";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -19,15 +21,23 @@ const AnimatedRoutes = () => {
       <Route
         element={<Home/>}
         path='/'
-      />  
+      />
       <Route
         element={<Contact/>}
         path='/contact'
-      />  
+      />
       <Route
         element={<About/>}
         path='/about'
-      />  
+      />
+      <Route
+        element={<People/>}
+        path='/people'
+      />
+      <Route
+        element={<Sports/>}
+        path='/sports'
+      />
 
     </Routes>
 

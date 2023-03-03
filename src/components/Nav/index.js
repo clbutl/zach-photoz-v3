@@ -23,6 +23,9 @@ const NavBar = (switchPage) => {
   const changeCategoryNav = () => {
     changeActiveCategories(!activeCategories)
   }
+  const closeCategoryNav = () => {
+    changeActiveCategories(false)
+  }
   
   document.addEventListener('click', function() {
     changeHash(document.location.hash)
@@ -63,24 +66,36 @@ const NavBar = (switchPage) => {
 
         {/* Categories */}
         <div className={activeCategories ? "active-dropdown-div" : "dropdown-div"}>
-          <h2 className={activeCategories ? "active-drop nav-links" : "hidden-drop nav-links"}>
+          <Link onClick={closeCategoryNav} className="nav-links" to='/people'>
+            <h2 className={activeCategories ? "active-drop nav-links" : "hidden-drop nav-links"}>
             People
-          </h2>
-          <h2 className={activeCategories ? "active-drop nav-links" : "hidden-drop nav-links"}>
+            </h2>
+          </Link>
+          <Link onClick={closeCategoryNav} className="nav-links" to='/animals'>
+            <h2 className={activeCategories ? "active-drop nav-links" : "hidden-drop nav-links"}>
             Animals
-          </h2>
-          <h2 className={activeCategories ? "active-drop nav-links" : "hidden-drop nav-links"}>
+            </h2>
+          </Link>
+          <Link onClick={closeCategoryNav} className="nav-links" to='/sports'>
+            <h2 className={activeCategories ? "active-drop nav-links" : "hidden-drop nav-links"}>
             Sports
-          </h2>
-          <h2 className={activeCategories ? "active-drop nav-links" : "hidden-drop nav-links"}>
+            </h2>
+          </Link>
+          <Link onClick={closeCategoryNav} className="nav-links" to='/street'>
+            <h2 className={activeCategories ? "active-drop nav-links" : "hidden-drop nav-links"}>
             Street
-          </h2>
-          <h2 className={activeCategories ? "active-drop nav-links" : "hidden-drop nav-links"}>
+            </h2>
+          </Link>
+          <Link onClick={closeCategoryNav} className="nav-links" to='/cars'>
+            <h2 className={activeCategories ? "active-drop nav-links" : "hidden-drop nav-links"}>
             Cars
-          </h2>
-          <h2 className={activeCategories ? "active-drop nav-links" : "hidden-drop nav-links"}>
+            </h2>
+          </Link>
+          <Link onClick={closeCategoryNav} className="nav-links" to='/nature'>
+            <h2 className={activeCategories ? "active-drop nav-links" : "hidden-drop nav-links"}>
             Nature
-          </h2>
+            </h2>
+          </Link>
         </div>
       </nav>
   )
