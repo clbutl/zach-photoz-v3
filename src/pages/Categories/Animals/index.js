@@ -20,8 +20,10 @@ const Animals = () => {
         </div>
       </section>
       {/* Top Animals Section */}
-      <section>
-
+      <section className="animals-middle-section">
+        <div>
+          
+        </div>
       </section>
     </div>
   )

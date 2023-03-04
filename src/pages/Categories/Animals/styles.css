@@ -49,6 +49,23 @@ html {
 }
 
 
+
+
+.animals-middle-section {
+  margin-top: 300px;
+}
+
+
+
+@media screen and (max-width: 1458px) {
+  .animals-middle-section {
+  margin-top: 240px;
+}}
+@media screen and (max-width: 1183px) {
+  .animals-middle-section {
+  margin-top: 160px;
+}}
+
 @media screen and (max-width: 1085px) {
   .animals-top-section {
     display: flex;
