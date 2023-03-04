@@ -16,10 +16,6 @@ const Header = () => {
   const switchPage = () => {
     changeNav(true)
   }
-  
-  document.addEventListener('load', function() {
-    console.log('hi')
-  })
 
   return (
     <div>

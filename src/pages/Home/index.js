@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 
 // Filler Image For Elements
 import FillerHome from '../../assets/filler-home.png'
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const fadeIn = {
@@ -37,38 +38,38 @@ const Home = () => {
     >
       {/* People & Animals */}
       <section>
-        <article className="left-a">
+        <Link to='/people' className="article left-a">
           <motion.img className="article-img" whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="people"/>
           <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>
             PEOPLE
           </motion.figcaption>
-        </article>
-        <article className="right-a">
+        </Link>
+        <Link to='animals' className="article right-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="animals"/>
           <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>ANIMALS</motion.figcaption>
-        </article>
+        </Link>
       </section>
       {/* Sports & Street */}
       <section>
-        <article className="left-a">
+        <Link to='sports' className="article left-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="sports"/>
           <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>SPORTS</motion.figcaption>
-        </article>
-        <article className="right-a">
+        </Link>
+        <Link to='street' className="article right-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="street"/>
           <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>STREET</motion.figcaption>
-        </article>
+        </Link>
       </section>
       {/* Cars & Nature */}
       <section>
-        <article className="left-a" to='/cars'>
+        <Link to='cars' className="article left-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="cars"/>
           <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>CARS</motion.figcaption>
-        </article>
-        <article className="right-a">
+        </Link>
+        <Link to='nature' className="article right-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="nature"/>
           <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>NATURE</motion.figcaption>
-        </article>
+        </Link>
       </section>
     </motion.div>
   )

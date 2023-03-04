@@ -107,6 +107,8 @@ header {
   } .active-mobile-logo {
     position: fixed;
     top: 37px;
+  } .inactive-mobile-nav {
+    display: none;
   }
 }
 

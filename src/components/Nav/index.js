@@ -4,20 +4,21 @@ import './styles.css'
 import InstagramLogo from '../../assets/Instagram-logo-black.PNG'
 // import InstagramLogoColored from '../../assets/Instagram-logo-colored.png'
 
-const NavBar = (switchPage) => {
+const NavBar = (switchP) => {
   const [currentHash, changeHash] = useState(document.location.hash)
   const [activeCategories, changeActiveCategories] = useState(false)
 
   // Changes Page Backend Value Based on Navigation Link Clicked
-  const changePage = (e) => {
-    if (e.target.id === "1" || e.target.id === 'nav1') {
-      changeHash('/')
-      return;
-    } else if (e.target.id === 'nav3') {
-      changeHash('/contact')
-      return;
-    } changeHash('/about')
-  }
+  // const changePage = (e) => {
+  //   if (e.target === undefined) return;
+  //   if (e.target.id === "1" || e.target.id === 'nav1') {
+  //     changeHash('/')
+  //     return;
+  //   } else if (e.target.id === 'nav3') {
+  //     changeHash('/contact')
+  //     return;
+  //   } changeHash('/about')
+  // }
 
   // Toggles Category Navigation Visability
   const changeCategoryNav = () => {
@@ -31,26 +32,25 @@ const NavBar = (switchPage) => {
     changeHash(document.location.hash)
   })
 
-  const callBothPageChanges = () => {
-    changePage()
-    switchPage()
-  } 
+  const switchPage = () => {
+    switchP()
+  }
 
   return (
     
     <nav>
       {/* Main Nav */}
         <Link className={activeCategories ? "hidden nav-links" : "not-hidden nav-links"} to='/'>
-          <h2 id="nav1" onClick={callBothPageChanges} className={currentHash === '#/' || currentHash === '/' || !currentHash ? "active" : "inactive"}>Home</h2>
+          <h2 id="nav1" onClick={switchPage} className={currentHash === '#/' || currentHash === '/' || !currentHash ? "active" : "inactive"}>Home</h2>
         </Link>
         <h2 id="nav2" onClick={changeCategoryNav} className={activeCategories ? "active-categories nav-links" : "inactive-categories nav-links"}>
           Categories
         </h2>
         <Link className={activeCategories ? "hidden nav-links" : "not-hidden nav-links"} to='/contact'>
-          <h2 id="nav3" onClick={callBothPageChanges} className={currentHash === '/contact' || currentHash === '#/contact' ? "active" : "inactive"}>Contact</h2>
+          <h2 id="nav3" onClick={switchPage} className={currentHash === '/contact' || currentHash === '#/contact' ? "active" : "inactive"}>Contact</h2>
         </Link>
         <Link className={activeCategories ? "hidden nav-links" : "not-hidden nav-links"} to='/about'>
-          <h2 id="nav4" onClick={callBothPageChanges} className={currentHash === '/about' || currentHash === '#/about' ? "active" : "inactive"}>About</h2>
+          <h2 id="nav4" onClick={switchPage} className={currentHash === '/about' || currentHash === '#/about' ? "active" : "inactive"}>About</h2>
         </Link>
         <Link 
           target='_blank' 
