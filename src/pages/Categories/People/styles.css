@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush');
 
 /* Main Div */
-.main-sports-div {
+.main-people-div {
   display: flex;
   flex-direction: column;
   font-family: Caveat Brush;
@@ -10,22 +10,24 @@
   align-items: center;
 }
 /* Description Divs */
-.sports-description-div {
+.people-description-div {
   display: flex;
   position: absolute;
   width: 450px;
   flex-direction: column;
   background-color: white;
-} .sports-div {
+  text-decoration: none;
+  color: black;
+} .peoples-div {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 0 90px 0;
-} .sports-description-div h1 {
+} .people-description-div h1 {
   font-size: 55px;
   margin: 10px 0;
   text-align: center;
-} .sports-description-div p {
+} .people-description-div p {
   font-size: 25px;
   margin: 10px 0;
   padding: 0 10px;
@@ -33,28 +35,20 @@
 } 
 
 
-/* Track Sections */
-.track-section {
+/* Seniors Sections */
+.senior-section {
   width: 95vw;
-} .track-description {
+} .seniors-description {
   margin-top: -200px;
   left: 10%;
 } 
 
-/* XC Sections */
-.xc-section {
+/* Couples Sections */
+.couples-section {
   width: 95vw;
-} .xc-description {
+} .couples-description {
   margin-top: -200px;
   right: 10%;
-} 
-
-/* Football Sections */
-.football-section {
-  width: 95vw;
-} .football-description {
-  margin-top: -200px;
-  left: 10%;
 } 
 
 
@@ -63,9 +57,9 @@
 
 
 @media screen and (max-width: 1000px) {
-  .sports-description-div {
+  .people-description-div {
     position: relative;
-  } .sports-div {
+  } .peoples-div {
     flex-direction: column;
     justify-content: center;
     padding: 0 20px 20px 20px;
@@ -73,17 +67,17 @@
 }
 
 @media screen and (max-width: 750px) {
-  .track-image, .xc-image, .football-image {
+  .couples-image, .seniors-image {
     width: 90vw;
-  } .sports-description-div {
+  } .people-description-div {
     width: 65vw;
   } 
 }
 
 @media screen and (max-width: 600px) {
-  .sports-description-div h1 {
+  .people-description-div h1 {
     font-size: 40px;
-  } .sports-description-div p {
+  } .people-description-div p {
     font-size: 19px;
   } 
 }

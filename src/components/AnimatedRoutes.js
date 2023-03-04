@@ -5,8 +5,23 @@ import { AnimatePresence } from 'framer-motion'
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
-import People from "../pages/People";
-import Sports from "../pages/Sports";
+
+// Categories
+import Animals from "../pages/Categories/Animals";
+import Street from "../pages/Categories/Street";
+import Cars from "../pages/Categories/Cars";
+import Nature from "../pages/Categories/Nature";
+
+// People's
+import People from "../pages/Categories/People";
+import Seniors from "../pages/Categories/People/Seniors";
+import Couples from "../pages/Categories/People/Couples";
+
+// Sports
+import Sports from "../pages/Categories/Sports";
+import Track from "../pages/Categories/Sports/Track";
+import Xc from "../pages/Categories/Sports/Xc";
+import Football from "../pages/Categories/Sports/Football";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -31,12 +46,52 @@ const AnimatedRoutes = () => {
         path='/about'
       />
       <Route
+        element={<Animals/>}
+        path='/animals'
+      />
+      <Route
+        element={<Street/>}
+        path='/street'
+      />
+      <Route
+        element={<Cars/>}
+        path='/cars'
+      />
+      <Route
+        element={<Nature/>}
+        path='/nature'
+      />
+
+      {/* People's Routes */}
+      <Route
         element={<People/>}
         path='/people'
       />
       <Route
+        element={<Seniors/>}
+        path='/people/seniors'
+      />
+      <Route
+        element={<Couples/>}
+        path='/people/couples'
+      />
+      
+      {/* Sports's Routes */}
+      <Route
         element={<Sports/>}
         path='/sports'
+      />
+      <Route
+        element={<Track/>}
+        path='/sports/track'
+      />
+      <Route
+        element={<Xc/>}
+        path='/sports/xc'
+      />
+      <Route
+        element={<Football/>}
+        path='/sports/football'
       />
 
     </Routes>

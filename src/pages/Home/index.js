@@ -46,29 +46,39 @@ const Home = () => {
         </Link>
         <Link to='animals' className="article right-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="animals"/>
-          <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>ANIMALS</motion.figcaption>
+          <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>
+            ANIMALS
+          </motion.figcaption>
         </Link>
       </section>
       {/* Sports & Street */}
       <section>
         <Link to='sports' className="article left-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="sports"/>
-          <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>SPORTS</motion.figcaption>
+          <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>
+            SPORTS
+          </motion.figcaption>
         </Link>
         <Link to='street' className="article right-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="street"/>
-          <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>STREET</motion.figcaption>
+          <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>
+            STREET
+          </motion.figcaption>
         </Link>
       </section>
       {/* Cars & Nature */}
       <section>
         <Link to='cars' className="article left-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="cars"/>
-          <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>CARS</motion.figcaption>
+          <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>
+            CARS
+          </motion.figcaption>
         </Link>
         <Link to='nature' className="article right-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="nature"/>
-          <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>NATURE</motion.figcaption>
+          <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>
+            NATURE
+          </motion.figcaption>
         </Link>
       </section>
     </motion.div>
