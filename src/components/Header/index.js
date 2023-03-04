@@ -15,6 +15,7 @@ const Header = () => {
 
   const switchPage = () => {
     changeNav(true)
+    
   }
 
   return (
@@ -35,7 +36,7 @@ const Header = () => {
         </div>
       
         {/* Mobile Dropdown */}
-        <div className="navigation-dropdown hide-drop" onClick={navigationChange}>
+        <div className={currentNav ? "pos-absolute navigation-dropdown hide-drop" : "pos-fixed navigation-dropdown hide-drop"} onClick={navigationChange}>
           <div id={currentNav ? '' : 'nav-dropdown-1'}></div>
           <div id={currentNav ? '' : 'nav-dropdown-2'}></div>
           <div id={currentNav ? '' : 'nav-dropdown-3'}></div>

@@ -39,7 +39,7 @@ header {
 
 /* Mobile Dropdown */
 .navigation-dropdown {
-  position: fixed;
+  position: absolute;
   display: none;
   justify-content: space-around;
   flex-direction: column;
@@ -84,6 +84,12 @@ header {
   opacity: 0;
   height: 0; 
   width: 0; 
+}
+
+.pos-absolute {
+  position: absolute;
+} .pos-fixed {
+  position: fixed;
 }
 
 

@@ -35,6 +35,10 @@ const AnimatedRoutes = () => {
 
       <Route
         element={<Home/>}
+        path='*'
+      />
+      <Route
+        element={<Home/>}
         path='/'
       />
       <Route
