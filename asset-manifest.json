@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/zach-photoz-v3/static/css/main.7114b61a.css",
-    "main.js": "/zach-photoz-v3/static/js/main.a0cfe6b8.js",
+    "main.css": "/zach-photoz-v3/static/css/main.992f7e19.css",
+    "main.js": "/zach-photoz-v3/static/js/main.65558ef5.js",
     "static/js/787.d1c45737.chunk.js": "/zach-photoz-v3/static/js/787.d1c45737.chunk.js",
     "static/media/filler-about.png": "/zach-photoz-v3/static/media/filler-about.9af18357dfd739a80c10.png",
     "static/media/filler-home.png": "/zach-photoz-v3/static/media/filler-home.3fc512c29e2274013c32.png",
     "static/media/Instagram-logo-black.PNG": "/zach-photoz-v3/static/media/Instagram-logo-black.329f00ba0eb4481a8173.PNG",
     "index.html": "/zach-photoz-v3/index.html",
-    "main.7114b61a.css.map": "/zach-photoz-v3/static/css/main.7114b61a.css.map",
-    "main.a0cfe6b8.js.map": "/zach-photoz-v3/static/js/main.a0cfe6b8.js.map",
+    "main.992f7e19.css.map": "/zach-photoz-v3/static/css/main.992f7e19.css.map",
+    "main.65558ef5.js.map": "/zach-photoz-v3/static/js/main.65558ef5.js.map",
     "787.d1c45737.chunk.js.map": "/zach-photoz-v3/static/js/787.d1c45737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7114b61a.css",
-    "static/js/main.a0cfe6b8.js"
+    "static/css/main.992f7e19.css",
+    "static/js/main.65558ef5.js"
   ]
 }
