@@ -5,6 +5,19 @@ import { motion } from 'framer-motion'
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const SERVICE_ID = process.env.SERVICE_ID;
+  const TEMPLATE_ID = process.env.TEMPLATE_ID;
+  const ACCOUNT_ID = process.env.ACCOUNT_ID;
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, ACCOUNT_ID)
+      .then((result) => {
+          window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
 
   return (
     <motion.div 
