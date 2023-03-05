@@ -53,6 +53,8 @@ html {
 
 .animals-middle-section {
   margin-top: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 
