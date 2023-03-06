@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/zach-photoz-v3/static/css/main.dd13a23c.css",
-    "main.js": "/zach-photoz-v3/static/js/main.411c4b0c.js",
-    "static/js/787.d1c45737.chunk.js": "/zach-photoz-v3/static/js/787.d1c45737.chunk.js",
-    "static/media/filler-about.png": "/zach-photoz-v3/static/media/filler-about.9af18357dfd739a80c10.png",
-    "static/media/filler-home.png": "/zach-photoz-v3/static/media/filler-home.3fc512c29e2274013c32.png",
-    "static/media/Instagram-logo-black.PNG": "/zach-photoz-v3/static/media/Instagram-logo-black.329f00ba0eb4481a8173.PNG",
-    "index.html": "/zach-photoz-v3/index.html",
-    "main.dd13a23c.css.map": "/zach-photoz-v3/static/css/main.dd13a23c.css.map",
-    "main.411c4b0c.js.map": "/zach-photoz-v3/static/js/main.411c4b0c.js.map",
-    "787.d1c45737.chunk.js.map": "/zach-photoz-v3/static/js/787.d1c45737.chunk.js.map"
+    "main.css": "/static/css/main.347c6121.css",
+    "main.js": "/static/js/main.a149d467.js",
+    "static/js/787.d1c45737.chunk.js": "/static/js/787.d1c45737.chunk.js",
+    "static/media/filler-about.png": "/static/media/filler-about.9af18357dfd739a80c10.png",
+    "static/media/filler-home.png": "/static/media/filler-home.3fc512c29e2274013c32.png",
+    "static/media/Instagram-logo-black.PNG": "/static/media/Instagram-logo-black.329f00ba0eb4481a8173.PNG",
+    "index.html": "/index.html",
+    "main.347c6121.css.map": "/static/css/main.347c6121.css.map",
+    "main.a149d467.js.map": "/static/js/main.a149d467.js.map",
+    "787.d1c45737.chunk.js.map": "/static/js/787.d1c45737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd13a23c.css",
-    "static/js/main.411c4b0c.js"
+    "static/css/main.347c6121.css",
+    "static/js/main.a149d467.js"
   ]
 }
