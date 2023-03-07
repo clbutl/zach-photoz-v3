@@ -118,9 +118,9 @@ const Contact = () => {
 
         <div className="contact-bottom-links">
           <Link className="contact-links" target='_blank' onClick={() => {
-            window.location = 'mailto:cannonlbutler@gmail.com';
+            window.location = 'mailto:zachphotozz@gmail.com';
           }}>
-            <h1>cannonlbutler@gmail.com</h1>
+            <h1>zachphotozz@gmail.com</h1>
           </Link>
           <Link className="contact-links" target='_blank' onClick={() => {
             window.open('https://www.instagram.com/zach__photoz/', '_blank')
