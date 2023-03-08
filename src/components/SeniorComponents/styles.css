@@ -1,0 +1,38 @@
+
+
+
+.individual-seniors {
+  min-width: 25vw;
+  max-width: 50vw;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} .individual-seniors img {
+  width: 100%;
+} .individual-senior-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} .individual-senior-img-div h1 {
+  margin: 0;
+  position: absolute;
+  font-size: 40px;
+  background-color: white;
+  padding: 0px 10px;
+  border-radius: 15px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .individual-senior-img-div h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .individual-senior-img-div h1 {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,120 @@
+/* Imports Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush');
+
+html {
+  min-height: 100vh;
+  background-color: rgb(253, 234, 255);
+}
+
+/* Main Div */
+.main-subcat-div {
+  display: flex;
+  flex-direction: column;
+  font-family: Caveat Brush;
+}
+
+
+.subcat-top-section {
+  display: flex;
+} .subcat-top-section img {
+  width: 100%;
+} .subcat-top-section div {
+  width: 40vw;
+} .subcat-top-section h1 {
+  font-size: 55px;
+  margin: 10px 0;
+} .subcat-top-section p {
+  font-size: 25px;
+  margin: 10px 0 0;
+  padding: 0 10px 10px;
+  text-align: center;
+} .subcat-image-div {
+  position: absolute;
+  margin-top: 50px;
+  left: 20%;
+  width: 50%;
+  max-height: 500px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+} .subcat-description-div {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  background-color: white;
+  left: 45%;
+}
+
+
+
+
+.subcat-middle-section {
+  margin: 300px 75px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+
+
+@media screen and (max-width: 1458px) {
+  .subcat-middle-section {
+  margin-top: 240px;
+}}
+@media screen and (max-width: 1183px) {
+  .subcat-middle-section {
+  margin-top: 160px;
+}}
+
+@media screen and (max-width: 1085px) {
+  .subcat-top-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } .subcat-top-section div {
+    width: 75%;
+  } .subcat-image-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    max-height: fit-content;
+    margin-bottom: 20px;
+  } .subcat-description-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    flex-direction: column;
+    height: fit-content;
+    overflow: auto;
+    margin-bottom: 0;
+  } .subcat-top-section img {
+    width: 100%;
+    height: 100%;
+  } .subcat-middle-section {
+    margin: 20px 75px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .subcat-top-section div {
+    width: 90%;
+  } .subcat-top-section p {
+    font-size: 22px;
+  }.subcat-middle-section {
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+  }
+}
