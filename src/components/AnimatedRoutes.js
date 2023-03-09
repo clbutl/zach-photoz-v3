@@ -66,37 +66,51 @@ const AnimatedRoutes = () => {
         path='/nature'
       />
 
-      {/* People's Routes */}
-      <Route
-        element={<People/>}
-        path='/people'
-      />
-      <Route
-        element={<Seniors/>}
-        path='/people/seniors'
-      />
-      <Route
-        element={<Couples/>}
-        path='/people/couples'
-      />
-      
-      {/* Sports's Routes */}
-      <Route
-        element={<Sports/>}
-        path='/sports'
-      />
-      <Route
-        element={<Track/>}
-        path='/sports/track'
-      />
-      <Route
-        element={<Xc/>}
-        path='/sports/xc'
-      />
-      <Route
-        element={<Football/>}
-        path='/sports/football'
-      />
+        {/* People's Routes */}
+        <Route
+          element={<People/>}
+          path='/people'
+        />
+
+          {/* Seniors */}
+          <Route
+            element={<Seniors/>}
+            path='/people/seniors'
+          />
+
+            <Route
+              element=''
+              path="/people/seniors/dezi"
+            />
+
+
+          {/* Couples */}
+          <Route
+            element={<Couples/>}
+            path='/people/couples'
+          />
+
+        {/* Sports's Routes */}
+        <Route
+          element={<Sports/>}
+          path='/sports'
+        />
+          <Route
+            element={<Track/>}
+            path='/sports/track'
+          />
+
+
+          <Route
+            element={<Xc/>}
+            path='/sports/xc'
+          />
+
+
+          <Route
+            element={<Football/>}
+            path='/sports/football'
+          />
 
     </Routes>
 
