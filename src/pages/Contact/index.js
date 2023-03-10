@@ -5,6 +5,8 @@ import { motion } from 'framer-motion'
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+  const [currentSubject, changeCurrentSubject] = useState("")
+  const [subjectDropdown, changeSubjectDropdown] = useState(false)
   const [formState, setFormState] = useState({
     firstName: '',
     lastName: '',
@@ -38,6 +40,25 @@ const Contact = () => {
       });
   }
 
+
+  const onClickDropdown = () => {
+    changeSubjectDropdown(!subjectDropdown)
+  }
+
+  const changeSubject = (e) => {
+    if (e.target.id === "1") {
+      changeCurrentSubject("Question")
+      return;
+    } else if (e.target.id === "2") {
+      changeCurrentSubject("Scheduling")
+      return;
+    } else if (e.target.id === "3") {
+      changeCurrentSubject("Other")
+      return;
+    } 
+    return;
+  }
+
   return (
     <motion.div 
       className="main-contact-div"
@@ -50,6 +71,7 @@ const Contact = () => {
         onSubmit={sendEmail}
       >
         <h1 className="form-header">Contact</h1>
+        <h2 className="form-subheader">I would love to hear from you! If you would like to schedule a session you can contact me by filling out this form! I will be sure to get back to you within 3 business days.</h2>
         {/* First and Last */}
         <div className="form-div first-last-div">
           {/* First Name */}
@@ -85,14 +107,39 @@ const Contact = () => {
         </div>
         {/* Subject */}
         <div className="form-div input-div">
-          <input
-            id="subject-from"
-            name="subject"
-            required={true}
-            onChange={handleFormChange}
-          />
+          <div className="subject-div">
+            <textarea
+              className={currentSubject === "Other" ? "active-subject subject-input" : "inActive-subject subject-input"}
+              id="subject-from"
+              name="subject"
+              required={currentSubject === "Other" ? true : false}
+              onChange={handleFormChange}
+              readOnly={currentSubject === "Other" ? "" : "readonly"}
+              placeholder={currentSubject}
+            >
+            </textarea>
+            <div onClick={onClickDropdown} className={subjectDropdown ? "dropdown-subject active-dropdown" : "dropdown-subject inActive-dropdown"}>
+              <h1>V</h1>
+            </div>
+          </div>
           <h3>Subject<span className="red-text">*</span></h3>
         </div>
+
+        {/* Subject Dropdown */}
+        <div className={subjectDropdown ? "subject-dropdown-main" : "hidden"}>
+          <div className="subject-dropdown-mid">
+            <div>
+              <h1 onClick={changeSubject} id="1">Questions</h1>
+            </div>
+            <div>
+              <h1 onClick={changeSubject} id="2">Scheduling</h1>
+            </div>
+            <div>
+              <h1 onClick={changeSubject} id="3">Other</h1>
+            </div>
+          </div>
+        </div>
+
         {/* Message */}
         <div className="form-div input-div">
           <textarea

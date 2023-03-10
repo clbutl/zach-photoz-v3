@@ -22,6 +22,8 @@ import Sports from "../pages/Categories/Sports";
 import Track from "../pages/Categories/Sports/Track";
 import Xc from "../pages/Categories/Sports/Xc";
 import Football from "../pages/Categories/Sports/Football";
+import DeziPage from "../pages/SeniorPages/Dezi";
+import DefaultPage from "../pages/Default";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -74,19 +76,19 @@ const AnimatedRoutes = () => {
 
           {/* Seniors */}
           <Route
-            element={<Seniors/>}
+            element={<DefaultPage/>}
             path='/people/seniors'
           />
 
             <Route
-              element=''
+              element={<DefaultPage/>}
               path="/people/seniors/dezi"
             />
 
 
           {/* Couples */}
           <Route
-            element={<Couples/>}
+            element={<DefaultPage/>}
             path='/people/couples'
           />
 
@@ -96,19 +98,19 @@ const AnimatedRoutes = () => {
           path='/sports'
         />
           <Route
-            element={<Track/>}
+            element={<DefaultPage/>}
             path='/sports/track'
           />
 
 
           <Route
-            element={<Xc/>}
+            element={<DefaultPage/>}
             path='/sports/xc'
           />
 
 
           <Route
-            element={<Football/>}
+            element={<DefaultPage/>}
             path='/sports/football'
           />
 

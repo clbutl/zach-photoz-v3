@@ -24,16 +24,12 @@ const About = () => {
           <p>
             <span className="about-header-span">Who I Am:</span>
             <br/>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Hello and welcome to my website! I'm Zach Slone, a passionate photographer based in Galion, Ohio, currently pursuing an art degree with a minor in photography at Bluffton University. I take pictures for the Track and Field and Cross Country teams, which are used on <a target="_blank" rel="noreferrer" href="https://www.blufftonbeavers.com/sports/mtrack/index">Men's Track & Field - Bluffton University</a>, allowing me to combine my love for sports and photography.
+            <p>
+            To me, photography is more than just taking pictures - it's about capturing moments, emotions, and telling a story through images. My ultimate goal as a photographer is to create images that not only look beautiful but also bring out the personality of my clients. 
+            </p>
+          
           </p>
-        </article>
-        <article className="about-bottom-article">
-          <p>
-            <span className="about-header-span">Who I Work With:</span>
-            <br/>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-
         </article>
       </div>
 

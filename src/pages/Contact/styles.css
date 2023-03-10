@@ -4,6 +4,8 @@
 .fade-out {
   opacity: 1;
   transition: opacity 1500ms ease;
+} .hidden {
+  display: none;
 }
 
 /* Main Form Content */
@@ -38,6 +40,15 @@
   resize: none;
   height: 120px;
   flex-wrap: wrap;
+} form input {
+  border: 1px solid rgb(118, 118, 118);
+  border-radius: 5px;
+} .form-subheader {
+  text-align: left;
+  font-size: 25px;
+  padding: 10px;
+} form {
+  max-width: 616px;
 }
 
 
@@ -75,6 +86,63 @@
   color: black;
 }
 
+
+.active-subject {
+  background-color: white;
+  border: 1px solid rgb(118, 118, 118);
+  border-radius: 5px;
+} .inActive-subject {
+  background-color: rgb(228, 228, 228);
+  border: 1px solid rgb(118, 118, 118);
+} .subject-input {
+  width: 90%;
+  height: 41px;
+  padding: 5px;
+  resize: none;
+  border: 1px solid rgb(118, 118, 118);
+  border-radius: 5px;
+} .subject-div {
+  display: flex;
+} .dropdown-subject {
+  width: 10%;
+  height: fit-content;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: white;
+} .dropdown-subject h1 {
+  margin: 0;
+  border-radius: 5px;
+  font-family: Roboto, Helvetica, sans-serif;
+  border: none;
+}
+
+
+.active-dropdown h1 {
+  transform: rotate(180deg);
+} 
+
+
+.subject-dropdown-main {
+  margin: 0 15px 15px 15px;
+  display: flex;
+  justify-content: right;
+} .subject-dropdown-main h1 {
+  margin: 0 20px 0 0;
+  width: 100%;
+  border: 1px solid black;
+} .subject-dropdown-mid {
+  border: 1px solid black;
+  position: absolute;
+  margin-top: -48px;
+  background-color: rgb(255, 255, 255);
+}
+
+.subject-dropdown-main h1:hover {
+  cursor: pointer;
+} .dropdown-subject:hover {
+  cursor: pointer;
+  user-select: none;
+}
 
 
 .red-text {
