@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.dec4ddd4.css",
-    "main.js": "/static/js/main.72bdef69.js",
+    "main.css": "/static/css/main.fe1134f4.css",
+    "main.js": "/static/js/main.964d43cb.js",
     "static/js/787.d1c45737.chunk.js": "/static/js/787.d1c45737.chunk.js",
     "static/media/dezi-main.jpg": "/static/media/dezi-main.f1f07436a5e659b41e27.jpg",
     "static/media/filler-about.png": "/static/media/filler-about.9af18357dfd739a80c10.png",
     "static/media/filler-home.png": "/static/media/filler-home.3fc512c29e2274013c32.png",
     "static/media/Instagram-logo-black.PNG": "/static/media/Instagram-logo-black.329f00ba0eb4481a8173.PNG",
     "index.html": "/index.html",
-    "main.dec4ddd4.css.map": "/static/css/main.dec4ddd4.css.map",
-    "main.72bdef69.js.map": "/static/js/main.72bdef69.js.map",
+    "main.fe1134f4.css.map": "/static/css/main.fe1134f4.css.map",
+    "main.964d43cb.js.map": "/static/js/main.964d43cb.js.map",
     "787.d1c45737.chunk.js.map": "/static/js/787.d1c45737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dec4ddd4.css",
-    "static/js/main.72bdef69.js"
+    "static/css/main.fe1134f4.css",
+    "static/js/main.964d43cb.js"
   ]
 }
