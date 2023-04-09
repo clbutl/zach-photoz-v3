@@ -18,6 +18,8 @@
 } .form-div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-left: 2.5%;
 } .form-div h3 {
   margin: 0;
   font-size: 25px;
@@ -27,8 +29,13 @@
 } .first-last-div {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+} .first-last-div h3 {
+  width: 90%;
+} .last-div {
+  margin-left: 2.5%;
 } .input-div {
-  margin: 0 15px 15px 15px;
+  width: 95%;
 } form input, form textarea {
   font-size: 30px;
   font-family: caveat brush;
@@ -49,7 +56,9 @@
   padding: 10px;
 } form {
   max-width: 616px;
-}
+  display: block;
+  justify-content: center;
+} 
 
 
 /* Submit Button */
@@ -153,11 +162,20 @@
 @media screen and (max-width: 750px) {
   .first-last-div {
     flex-direction: column;
-  } .first-last-div input {
-    width: 80vw;
-  } .input-div input, .input-div textarea {
-    width: 80vw;
   } 
+
+  .form-div {
+    min-width: 80vw;
+  } .first-last-div input {
+    width: 100%;
+  } #first-name-from {
+    margin-right: 0;
+    min-width: 100%;
+  }
+  
+  .last-div {
+    margin: 0;
+  }
 }
 
 

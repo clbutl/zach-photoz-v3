@@ -53,12 +53,15 @@ const Contact = () => {
   const changeSubject = (e) => {
     if (e.target.id === "1") {
       changeCurrentSubject("Question")
+      changeSubjectDropdown(!subjectDropdown)
       return;
     } else if (e.target.id === "2") {
       changeCurrentSubject("Scheduling")
+      changeSubjectDropdown(!subjectDropdown)
       return;
     } else if (e.target.id === "3") {
       changeCurrentSubject("Other")
+      changeSubjectDropdown(!subjectDropdown)
       return;
     } 
     return;
@@ -90,7 +93,7 @@ const Contact = () => {
             <h3>First Name<span className="red-text">*</span></h3>
           </div>
           {/* Last Name */}
-          <div className="input-div">
+          <div className="input-div last-div">
             <input
               id="last-name-from"
               name="lastName"
