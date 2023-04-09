@@ -4,6 +4,14 @@ import './styles.css'
 import { motion } from 'framer-motion'
 import emailjs from 'emailjs-com';
 
+
+const SERVICE_ID = process.env.SERVICE_ID;
+const TEMPLATE_ID = process.env.TEMPLATE_ID;
+const ACCOUNT_ID = process.env.ACCOUNT_ID;
+
+
+emailjs.init(ACCOUNT_ID);
+
 const Contact = () => {
   const [currentSubject, changeCurrentSubject] = useState("")
   const [subjectDropdown, changeSubjectDropdown] = useState(false)
@@ -17,17 +25,14 @@ const Contact = () => {
 
   const handleFormChange = (event, val, index) => {
     const { name, value } = event.target
-    console.log(name + ": ", value)
 
     setFormState({
       ...formState,
       [name]: value
     })
+    console.log(...formState)
   }
 
-  const SERVICE_ID = process.env.SERVICE_ID;
-  const TEMPLATE_ID = process.env.TEMPLATE_ID;
-  const ACCOUNT_ID = process.env.ACCOUNT_ID;
   const sendEmail = (e) => {
     e.preventDefault();
 

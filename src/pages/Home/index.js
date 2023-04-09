@@ -36,7 +36,7 @@ const Home = () => {
       className="main-home-div"
       exit={{opacity: 0}}  
     >
-      {/* People & Animals */}
+      {/* People & Animals & Sports */}
       <section>
         <Link to='/people' className="article left-a">
           <motion.img className="article-img" whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="people"/>
@@ -44,6 +44,8 @@ const Home = () => {
             PEOPLE
           </motion.figcaption>
         </Link>
+      </section>
+      <section>
         <Link to='animals' className="article right-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="animals"/>
           <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>
@@ -51,7 +53,6 @@ const Home = () => {
           </motion.figcaption>
         </Link>
       </section>
-      {/* Sports & Street */}
       <section>
         <Link to='sports' className="article left-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="sports"/>
@@ -59,6 +60,9 @@ const Home = () => {
             SPORTS
           </motion.figcaption>
         </Link>
+      </section>
+      {/* Cars & Nature & Street */}
+      <section>
         <Link to='street' className="article right-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="street"/>
           <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>
@@ -66,7 +70,6 @@ const Home = () => {
           </motion.figcaption>
         </Link>
       </section>
-      {/* Cars & Nature */}
       <section>
         <Link to='cars' className="article left-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="cars"/>
@@ -74,6 +77,8 @@ const Home = () => {
             CARS
           </motion.figcaption>
         </Link>
+      </section>
+      <section>
         <Link to='nature' className="article right-a">
           <motion.img className="article-img" onHoverEnd={fadeIn.imageHoverEnd} whileHover={fadeIn.imageHoverStart} initial={{opacity: 0}} animate={fadeIn.image} src={FillerHome} alt="nature"/>
           <motion.figcaption initial={{opacity: 0}} animate={fadeIn.caption}>
