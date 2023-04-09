@@ -30,7 +30,7 @@ const Contact = () => {
       ...formState,
       [name]: value
     })
-    console.log(...formState)
+    console.log(formState)
   }
 
   const sendEmail = (e) => {
@@ -54,10 +54,18 @@ const Contact = () => {
     if (e.target.id === "1") {
       changeCurrentSubject("Question")
       changeSubjectDropdown(!subjectDropdown)
+      setFormState({
+        ...formState,
+        subject: "Question"
+      })
       return;
     } else if (e.target.id === "2") {
       changeCurrentSubject("Scheduling")
       changeSubjectDropdown(!subjectDropdown)
+      setFormState({
+        ...formState,
+        subject: "Scheduling"
+      })
       return;
     } else if (e.target.id === "3") {
       changeCurrentSubject("Other")
