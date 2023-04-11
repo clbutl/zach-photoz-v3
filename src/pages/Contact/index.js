@@ -13,7 +13,7 @@ const ACCOUNT_ID = process.env.ACCOUNT_ID;
 emailjs.init(ACCOUNT_ID);
 
 const Contact = () => {
-  const [currentSubject, changeCurrentSubject] = useState("")
+  const [currentSubject, changeCurrentSubject] = useState("No Subject")
   const [subjectDropdown, changeSubjectDropdown] = useState(false)
   const [formState, setFormState] = useState({
     firstName: '',
@@ -30,13 +30,13 @@ const Contact = () => {
       ...formState,
       [name]: value
     })
-    console.log(formState)
   }
 
   const sendEmail = (e) => {
     e.preventDefault();
 
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, ACCOUNT_ID)
+      console.log(formState)
       .then((result) => {
         console.log(result)
         // window.location.reload()
@@ -128,9 +128,9 @@ const Contact = () => {
               className={currentSubject === "Other" ? "active-subject subject-input" : "inActive-subject subject-input"}
               id="subject-from"
               name="subject"
-              required={currentSubject === "Other" ? true : false}
+              required={currentSubject === "Other" || "No Subject" ? true : false}
               onChange={handleFormChange}
-              readOnly={currentSubject === "Other" ? "" : "readonly"}
+              readOnly={currentSubject === "Other" ? "No Subject" : "readonly"}
               placeholder={currentSubject}
             >
             </textarea>
