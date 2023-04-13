@@ -191,5 +191,9 @@
     font-size: 25px;
   } .submit-div button {
     font-size: 30px;
-  } 
+  } .subject-dropdown-mid {
+    margin-top: -27px;
+  } .subject-dropdown-mid h1 {
+    font-size: 35px;
+  }
 }

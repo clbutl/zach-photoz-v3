@@ -128,9 +128,9 @@ const Contact = () => {
               className={currentSubject === "Other" ? "active-subject subject-input" : "inActive-subject subject-input"}
               id="subject-from"
               name="subject"
-              required={currentSubject === "Other" || "No Subject" ? true : false}
+              required={currentSubject === "Other" || currentSubject === "No Subject" ? true : false}
               onChange={handleFormChange}
-              readOnly={currentSubject === "Other" ? "No Subject" : "readonly"}
+              readOnly={currentSubject === "Other" ? "" : "readonly"}
               placeholder={currentSubject}
             >
             </textarea>
